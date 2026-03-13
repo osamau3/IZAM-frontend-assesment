@@ -4,7 +4,7 @@ A responsive Pokémon browser built with **React 19**, **TypeScript**, and **Vit
 
 ## 🚀 Live Demo
 
-> **[View Live →](https://izam-frontend-assesment.vercel.app)**
+> **[View Live →](https://izam-frontend-assesment.vercel.app)** 
 
 ## 📸 Screenshots
 
