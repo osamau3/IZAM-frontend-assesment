@@ -1,0 +1,11 @@
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
+}

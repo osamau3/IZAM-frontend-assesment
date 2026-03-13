@@ -1,0 +1,37 @@
+.stat-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: 0.6rem;
+}
+
+.stat-bar__label {
+  flex: 0 0 90px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-align: left;
+}
+
+.stat-bar__track {
+  flex: 1;
+  height: 8px;
+  background: #E5E7EB;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.stat-bar__fill {
+  height: 100%;
+  background: var(--color-gradient);
+  border-radius: var(--radius-full);
+  transition: width 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.stat-bar__value {
+  flex: 0 0 32px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: right;
+}
