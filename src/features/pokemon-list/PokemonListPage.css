@@ -1,0 +1,122 @@
+.list-page {
+  min-height: 100vh;
+  background: var(--color-bg-list);
+  padding-bottom: var(--space-xl);
+}
+
+/* Header */
+.list-page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+}
+
+.list-page__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.list-page__subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+  font-weight: 400;
+}
+
+/* Toggle Buttons */
+.list-page__toggle {
+  display: flex;
+  gap: 0;
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  overflow: hidden;
+}
+
+.list-page__toggle-btn {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.list-page__toggle-btn--active {
+  background: var(--color-text-primary);
+  color: #fff;
+}
+
+.list-page__toggle-btn:not(.list-page__toggle-btn--active):hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Grid Layout */
+.list-page__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* End message */
+.list-page__end-message {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+  padding: var(--space-xl) 0 var(--space-2xl);
+  font-weight: 500;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 900px) {
+  .list-page__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+/* Responsive: Small Tablet */
+@media (max-width: 700px) {
+  .list-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .list-page__title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+  .list-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+    padding: 0 var(--space-md);
+  }
+
+  .list-page__header {
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+  }
+
+  .list-page__title {
+    font-size: 1.4rem;
+  }
+
+  .list-page__subtitle {
+    font-size: 0.85rem;
+  }
+
+  .list-page__toggle-btn {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.9rem;
+  }
+}
